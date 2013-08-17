@@ -155,6 +155,7 @@
 (require 'init-popwin)
 (require 'init-elnode)
 (require 'douban-music-mode)
+(require 'init-more)
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
 ;;----------------------------------------------------------------------------
