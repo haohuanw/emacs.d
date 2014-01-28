@@ -38,3 +38,4 @@ emms/
 /var
 org-clock-save.el
 DouBanMusic
+.DS_Store
