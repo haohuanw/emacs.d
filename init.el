@@ -149,8 +149,8 @@
 (require 'init-sr-speedbar)
 (require 'init-smartparens)
 ;; Choose either auto-complete or company-mode by commenting one of below two lines!
-;; (require 'init-auto-complete) ; after init-yasnippeta to override TAB
-(require 'init-company)
+(require 'init-auto-complete) ; after init-yasnippeta to override TAB
+;;(require 'init-company)
 (require 'init-stripe-buffer)
 (require 'init-popwin)
 (require 'init-elnode)
@@ -201,6 +201,7 @@
 ;;----------------------------------------------------------------------------
 ;(require 'init-locales) ;does not work in cygwin
 
+;;---------------------------------------------------------------
 
 (when (require 'time-date nil t)
    (message "Emacs startup time: %d seconds."

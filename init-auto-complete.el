@@ -43,6 +43,9 @@
 /usr/local/include
 /Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include
 /usr/include
+/usr/local/include
+/Library/Developer/CommandLineTools/usr/include
+/Library/Developer/CommandLineTools/usr/bin/../lib/c++/v1
 ")
          (*cygwin* "
 /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/c++/i686-pc-cygwin
@@ -74,6 +77,7 @@
   (setq ac-clang-flags
         (mapcar (lambda (item) (concat "-I" item))
                 (split-string clang-include-dir-str)))
+  ;(setq ac-clang-flags (append '("-std=c++11") ac-clang-flags))
 
   (cppcm-reload-all)
   ; fixed rinari's bug
